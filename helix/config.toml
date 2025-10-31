@@ -1,0 +1,15 @@
+theme = "gruvbox-material"
+
+[editor]
+true-color = true
+statusline.right = ["position", "total-line-numbers", "selections"]
+rulers = [140]
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.cursor-shape]
+insert = "bar"
+

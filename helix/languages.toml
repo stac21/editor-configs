@@ -1,0 +1,12 @@
+[[language]]
+name = "cpp"
+indent = {tab-width = 3, unit = "\t"}
+
+[language-server.clangd]
+command = "clangd"
+args = [ "--header-insertion=never" ]
+
+[[language]]
+name = "rust"
+indent = {tab-width = 3, unit = "\t"}
+
