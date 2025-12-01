@@ -4,3 +4,5 @@ Diagnostics:
 
 CompileFlags:
   Add: [-Wall, -Wextra, -Wshadow]
+
+--header-insertion=never
