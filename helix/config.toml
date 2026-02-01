@@ -4,6 +4,7 @@ theme = "gruvbox-material"
 true-color = true
 statusline.right = ["position", "total-line-numbers", "selections"]
 rulers = [140]
+trim-trailing-whitespace = true
 
 [editor.whitespace.render]
 space = "all"
