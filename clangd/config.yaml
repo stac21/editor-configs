@@ -1,9 +1,10 @@
 Diagnostics:
   ClangTidy:
-    Add: [clang-analyzer-*,cppcoreguidelines-*,bugprone-*,performance-*,readability-*,readability-non-const-parameter,misc-const-correctness,misc-use-anonymous-namespace,google-explicit-constructor,-bugprone-exception-escape,-cppcoreguidelines-pro-bounds-constant-array-index,-cppcoreguidelines-avoid-magic-numbers,-bugprone-easily-swappable-parameters,-cppcoreguidelines-non-private-member-variables-in-classes, modernize-deprecated-headers, modernize-avoid-c-style-cast, modernize-macro-to-enum, modernize-make-shared, modernize-make-unique, modernize-raw-string-literal, modernize-replace-random-shuffle, modernize-shrink-to-fit, modernize-type-traits, modernize-unary-static-assert, modernize-use-bool-literals, modernize-use-default-member-init, modernize-use-designated-initializers, modernize-use-emplace, modernize-use-equals-default, modernize-use-noexcept, modernize-use-nullptr, modernize-use-override, modernize-use-equals-delete, modernize-use-integer-sign-comparison, modernize-use-starts-with, modernize-use-std-format, modernize-use-std-numbers, modernize-use-transparent-functors, modernize-use-uncaught-exceptions, modernize-use-using]
+    Add: [clang-analyzer-*,cppcoreguidelines-*,bugprone-*,performance-*,readability-*,readability-non-const-parameter,misc-const-correctness,misc-use-anonymous-namespace,google-explicit-constructor,-bugprone-exception-escape,-cppcoreguidelines-pro-bounds-constant-array-index,-cppcoreguidelines-avoid-magic-numbers,-bugprone-easily-swappable-parameters,-cppcoreguidelines-non-private-member-variables-in-classes]
+    Remove: [readability-uppercase-literal-suffix, readability-identifier-length]
 
 CompileFlags:
-  Add: [-Wall, -Wextra, -Wshadow]
+  Add: [-Wall, -Wextra, -Wshadow, -Wno-c++98-compat, -Wno-missing-prototypes, -Wno-pre-c++20-compat-pedantic]
 
 Completion:
   HeaderInsertion: Never
